@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+#logo{
+    width: 200px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: white;
+    /* position: fixed;
+    width: 100vw; */
+}
+
+#nav-links{
+    display: flex;
+    column-gap: 40px;
+}
+
+nav button{
+    background-color: white;
+    padding: 10px 20px;
+    height: fit-content;
+    border-color: #e00c2f;
+    border-width: 2px ;
+    border-style: solid;
+
+}
