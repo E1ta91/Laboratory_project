@@ -85,3 +85,7 @@ nav button {
     background-color: #ED2647;
 }
 
+#hero-overlay button:hover {
+    background-color: #5E1914;
+    color: white;
+  }
