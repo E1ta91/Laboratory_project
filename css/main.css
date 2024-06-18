@@ -32,20 +32,25 @@ nav{
     z-index: 100;
 }
 
-#nav :hover button{
-    color: #5E1914;
-}
-
 nav button{
     background-color: white;
     padding: 10px 20px;
     height: fit-content;
     border-color: #ED2647;
     border-width: 2px ;
-    border-style: solid;
-    
+    border-style: solid;    
 }
 
+nav button {
+    background-color: white; 
+    color: black; 
+  }
+  
+  nav button:hover {
+    background-color: #5E1914;
+    color: white;
+  }
+  
 #hero{
     background-image: url(../assets/images/lab2\ background\ pmage.jpg);
     width: 100vw;
@@ -79,3 +84,4 @@ nav button{
     height: 60px;
     background-color: #ED2647;
 }
+
