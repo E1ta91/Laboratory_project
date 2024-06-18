@@ -5,26 +5,77 @@
     width: 200px;
 }
 
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 nav{
     display: flex;
     justify-content: space-between;
     padding: 20px 60px;
     background-color: white;
-    /* position: fixed;
-    width: 100vw; */
+    /* position: fixed; */
+    /* width: 100vw; */
 }
 
 #nav-links{
     display: flex;
     column-gap: 40px;
+    z-index: 100;
+}
+
+#nav :hover button{
+    color: #5E1914;
 }
 
 nav button{
     background-color: white;
     padding: 10px 20px;
     height: fit-content;
-    border-color: #e00c2f;
+    border-color: #ED2647;
     border-width: 2px ;
     border-style: solid;
+    
+}
 
+#hero{
+    background-image: url(../assets/images/lab2\ background\ pmage.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+#hero-overlay{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    color: white;
+    padding: 200px 50px;
+    row-gap: 20px;
+}
+
+#hero-overlay h1{
+    font-size: 50px;
+}
+
+/* #hero-overlay a {
+   color: white;
+} */
+
+#hero-overlay p{
+    font-size: 21px;  
+}
+
+#hero-overlay button{
+    width: 200px;
+    height: 60px;
+    background-color: #ED2647;
 }
