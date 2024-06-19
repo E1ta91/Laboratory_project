@@ -17,12 +17,14 @@
     font-style: normal;
   }
 
+
 nav{
     display: flex;
     justify-content: space-between;
     padding: 20px 60px;
     background-color: white;
-    /* position: fixed; */
+    width: 100vw;
+    position: fixed;
     /* width: 100vw; */
 }
 
@@ -30,24 +32,33 @@ nav{
     display: flex;
     column-gap: 40px;
     z-index: 100;
+    
 }
 
-#nav-links span:hover{
-    color: #5E1914;
+#nav-links a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
 }
+
+#nav-links a :hover{
+    color: #5E1914;  
+}
+
 nav button{
     background-color: white;
     padding: 10px 20px;
     height: fit-content;
     border-color: #ED2647;
     border-width: 2px ;
-    border-style: solid;    
+    border-style: solid;  
+    margin-right: 150px; 
 }
 
-nav button {
+/* nav button {
     background-color: white; 
     color: black; 
-  }
+  } */
   
   nav button:hover {
     background-color: #5E1914;
@@ -92,3 +103,47 @@ nav button {
     background-color: #5E1914;
     color: white;
   }
+
+ #about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px;
+ }
+
+ #about-image {
+    width: 400px;
+    height: 500px;
+    position: relative;
+ }
+
+ #about-image img{
+    width: 120%;
+    height: inherit;
+    background-size: cover;
+    border-top-left-radius: 100px;
+    
+ }
+
+ .img-cap{
+    position: absolute;
+    background-color: #5E1914;
+    color: white;
+    width: 120px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    bottom: -8%;
+    right: -40%;
+ }
+
+ .img-cap span{
+    font-size: 76px;
+ }
+
+ .img-cap p{
+    font-size: 18px;
+ }
