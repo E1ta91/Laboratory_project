@@ -7,6 +7,7 @@
     <title>Laboratory Science</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
@@ -87,11 +88,41 @@
         </div>
 
     </section>
-
-
     <section>Reason goes here</section>
-    <section>Reviews goes here</section>
+
+    <section id="reviews">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="review-cont"> 
+                      <h2>What Client Says</h2>
+                      <p>"Our professional leadership team is truly committed to <br>producing the best results for </br>our clients very successfully.</p>
+                      <div class="circular-image">
+                        <img src="./assets/images/emely.webp" alt="1">
+                    </div>
+                    <div id="write">
+                        <span>Reuben Clark</span>
+                        <p>CEO</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+
+
+
     <footer>our footer goes here</footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
 
 </html>
