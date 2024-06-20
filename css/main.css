@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
 }
-#logo{
+
+#logo {
     width: 200px;
 }
 
@@ -9,16 +10,16 @@
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  .roboto-regular {
+.roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 60px;
@@ -26,53 +27,56 @@ nav{
     width: 100vw;
     position: fixed;
     /* width: 100vw; */
+
 }
 
-#nav-links{
+#nav-links {
     display: flex;
     column-gap: 40px;
     z-index: 100;
-    
-}
-
-#nav-links a{
-    text-decoration: none;
+    font-weight: bold;
     font-size: 15px;
+}
+
+#nav-links a {
+    text-decoration: none;
+    
     color: black;
+   
 }
 
-#nav-links a :hover{
-    color: #5E1914;  
+#nav-links a :hover {
+    color: #5E1914;
 }
 
-nav button{
+nav button {
     background-color: white;
     padding: 10px 20px;
     height: fit-content;
     border-color: #ED2647;
-    border-width: 2px ;
-    border-style: solid;  
-    margin-right: 150px; 
+    border-width: 2px;
+    border-style: solid;
+    margin-right: 150px;
 }
 
 /* nav button {
     background-color: white; 
     color: black; 
   } */
-  
-  nav button:hover {
+
+nav button:hover {
     background-color: #5E1914;
     color: white;
-  }
-  
-#hero{
+}
+
+#hero {
     background-image: url(../assets/images/lab2\ background\ pmage.jpg);
     width: 100vw;
     height: 100vh;
     background-size: 100% 100%;
 }
 
-#hero-overlay{
+#hero-overlay {
     display: flex;
     flex-direction: column;
     column-gap: 20px;
@@ -81,7 +85,7 @@ nav button{
     row-gap: 20px;
 }
 
-#hero-overlay h1{
+#hero-overlay h1 {
     font-size: 50px;
 }
 
@@ -89,11 +93,11 @@ nav button{
    color: white;
 } */
 
-#hero-overlay p{
-    font-size: 21px;  
+#hero-overlay p {
+    font-size: 21px;
 }
 
-#hero-overlay button{
+#hero-overlay button {
     width: 200px;
     height: 60px;
     background-color: #ED2647;
@@ -102,48 +106,127 @@ nav button{
 #hero-overlay button:hover {
     background-color: #5E1914;
     color: white;
-  }
+}
 
- #about{
+#about {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: space-evenly;
     padding: 100px;
- }
 
- #about-image {
+}
+
+#about-image {
     width: 400px;
     height: 500px;
     position: relative;
- }
+}
 
- #about-image img{
+#about-image img {
     width: 120%;
     height: inherit;
     background-size: cover;
     border-top-left-radius: 100px;
-    
- }
+    z-index: -20;
 
- .img-cap{
+}
+
+.img-cap {
     position: absolute;
     background-color: #5E1914;
     color: white;
-    width: 120px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 15px;
     bottom: -8%;
-    right: -40%;
- }
+    right: -30%;
+}
 
- .img-cap span{
+.img-cap span {
     font-size: 76px;
- }
+}
 
- .img-cap p{
+.img-cap p {
     font-size: 18px;
- }
+}
+
+#about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    text-align: left;
+    row-gap: 40px;
+    margin-bottom: 50px;
+}
+
+#about-text h2 {
+    font-size: 31px;
+    color: black;
+}
+
+#about-text h3 {
+    font-size: 24px;
+    color: rgb(29, 27, 27);
+    line-height: 1.4;
+}
+
+#about-text p {
+    font-size: 18px;
+    color: rgb(94, 88, 88);
+    ;
+}
+
+#aboutsub span {
+    font-size: 20px;
+    color: black;
+    line-height: 1.8;
+}
+
+#aboutsub p {
+    font-size: 14px;
+    color: rgb(94, 88, 88);
+
+}
+
+.header-intro {
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 80vw;
+    padding-left: 155px;
+}
+
+.grid-container img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    row-gap: 5px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+}
+
+.item1 {
+    position: relative;
+}
+
+.item1 h2 {
+    color: white;
+    background-color: #5E1914;
+    padding: 9px 10px;
+    border-radius: 5px;
+}
