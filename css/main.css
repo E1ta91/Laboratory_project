@@ -216,7 +216,7 @@ nav button:hover {
     grid-template-columns: 1fr 1fr;
     width: 80vw;
     padding-left: 155px;
-    z-index: -20;
+  
 }
 
 .grid-container img {
@@ -234,6 +234,7 @@ nav button:hover {
 
 .item1 {
     position: relative;
+  
 }
 
 
@@ -352,5 +353,5 @@ nav button:hover {
 color: white;
 font-size: 16px ;
 outline: medium none;
-
 }
+
