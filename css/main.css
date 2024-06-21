@@ -216,6 +216,7 @@ nav button:hover {
     grid-template-columns: 1fr 1fr;
     width: 80vw;
     padding-left: 155px;
+    position: relative;
 }
 
 .grid-container img {
@@ -224,7 +225,14 @@ nav button:hover {
     object-fit: cover;
     row-gap: 5px;
 }
-
+.txt{
+    position: absolute;
+    background-color: #ED2647; 
+     padding: 9px 10px;
+    border-radius: 5px; 
+    right: 15%;
+    bottom: 10%;
+}
 .overlay-text {
     position: absolute;
     bottom: 10%;
@@ -232,16 +240,14 @@ nav button:hover {
 }
 
 .item1 {
-    position: relative;
-  
-}
-
-
-.item1 h2 {
-    color: white;
+    position: relative; 
     background-color: #ED2647;
     padding: 9px 10px;
     border-radius: 5px;
+}
+
+.item1 h2 {
+    color: white;  
 }
 
 #reviews {
@@ -253,17 +259,10 @@ nav button:hover {
 }
 
 .review-cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: black;
-    /* padding: 40px 30px 20px; */
-    width: 100vw;
-    height: 70vh;
-    text-align: center;
-    padding-top: 50px;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
 }
 
 .review-cont h2 {
@@ -284,13 +283,11 @@ nav button:hover {
     overflow: hidden;
     border-radius: 50%;
     border: 3px solid red;
-    /* margin-bottom: 30px;
-    margin-top: 70px; */
+   
 }
 
 .circular-image img {
     width: 100%;
-    height: auto;
 }
 
 #reason{
@@ -342,8 +339,8 @@ nav button:hover {
     text-align: center;
     /* cursor: pointer; */
     /* transition: color 0.4s linear; */
-    position: relative;
-    z-index: 1;
+    /* position: relative; */
+    /* z-index: 1; */
     overflow: hidden;
     text-decoration: none;
 }
